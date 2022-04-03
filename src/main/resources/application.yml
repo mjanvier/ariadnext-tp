@@ -1,0 +1,27 @@
+idcheck:
+  client:
+    basePath: https://api-test.idcheck.io/rest/
+    username: xxxx
+    password: xxxx
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 25MB
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: xxxx
+            client-secret: xxxx
+            scope:
+              - public_profile
+              - user_posts
+          google:
+            client-id: xxxx
+            client-secret: xxxx
+management:
+  endpoint:
+    health:
+      show-details: always

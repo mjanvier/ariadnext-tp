@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h2>
+            <span th:text="'Bonjour, ' + ${name} +'. Veuillez saisir votre carte d identité.'"></span>
+        </h2>
+        <form enctype="multipart/form-data" method="post" th:action="@{/idcheck}">
+            <div class="form-group">
+                <input class="form-control-file" name="file" type="file">
+            </div>
+            <button class="btn btn-primary" type="submit">Upload File</button>
+        </form>
+    </body>
+</html>

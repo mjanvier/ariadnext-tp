@@ -1,0 +1,22 @@
+### swagger
+GET https://api-test.idcheck.io
+
+### health + admin
+GET https://sandbox.idcheck.io/rest/v0/admin/health
+
+### demo case
+GET https://sandbox.idcheck.io/rest/v0/sandbox/democase
+
+### image list
+GET https://sandbox.idcheck.io/rest/v0/sandbox/imagelist
+
+### image
+GET https://sandbox.idcheck.io/rest/v0/sandbox/image/RP_FR_SPECIMEN_MARTIN?rawType=BASE64&face=RECTO&light=DL
+
+### user info
+GET https://api-test.idcheck.io/rest/v0/admin/user
+Authorization: Basic xxx xxx
+
+###
+GET https://sandbox.idcheck.io/rest/v0/admin/user
+Authorization: Basic xxx xxx
